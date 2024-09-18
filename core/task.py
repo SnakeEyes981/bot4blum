@@ -153,7 +153,9 @@ def process_do_task(token, keyword_file, proxies=None):
             else:
                 task_list = earn["subSections"]
             for task_group in task_list:
-                group = task_group["title"]
+                group = task_group.get("title", "") or task_group.get(
+                    "sectionType", "Unknown Group"
+                )
                 tasks = task_group["tasks"]
                 base.log(f"{base.white}Task Group: {base.yellow}{group}")
                 for task in tasks:
