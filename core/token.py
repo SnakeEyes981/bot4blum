@@ -12,7 +12,7 @@ def get_token(data, proxies=None):
 
     try:
         response = requests.post(
-            url=url, headers=headers(), json=payload, proxies=proxies, timeout=200
+            url=url, headers=headers(), json=payload, proxies=proxies, timeout=20
         )
         data = response.json()
         token = data["token"]["access"]

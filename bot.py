@@ -1,4 +1,5 @@
 import sys
+import requests
 
 sys.dont_write_bytecode = True
 
@@ -10,6 +11,8 @@ from core.farm import process_farming
 from core.game import process_play_game
 
 import time
+
+
 
 
 class Blum:

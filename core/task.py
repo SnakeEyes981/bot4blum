@@ -1,7 +1,9 @@
 import requests
+import time
 
 from smart_airdrop_claimer import base
 from core.headers import headers
+from core.message import send_telegram_message
 
 
 def check_in(token, proxies=None):
@@ -19,12 +21,19 @@ def check_in(token, proxies=None):
 
 def process_check_in(token, proxies=None):
     status = check_in(token=token, proxies=proxies)
+    timestamp = time.strftime("%Y-%m-%d %H:%M:%S", time.gmtime())
     if status == "OK":
         base.log(f"{base.white}Auto Check-in: {base.green}Success")
+        message = f"Checked in Success! (Timestamp: {timestamp} UTC)"
+        send_telegram_message(message)
     elif "same day" in status:
         base.log(f"{base.white}Auto Check-in: {base.red}Checked in already")
+        message = f"Already Checked in! (Timestamp: {timestamp} UTC)"
+        send_telegram_message(message)
     else:
         base.log(f"{base.white}Auto Check-in: {base.red}Fail")
+        message = f"Checked in Failed! (Timestamp: {timestamp} UTC)"
+        send_telegram_message(message)
 
 
 def get_task(token, proxies=None):
