@@ -3,5 +3,5 @@
   "auto-do-task": "false",
   "auto-claim-ref": "false",
   "auto-farm": "true",
-  "auto-play-game": "true"
+  "auto-play-game": "false"
 }
