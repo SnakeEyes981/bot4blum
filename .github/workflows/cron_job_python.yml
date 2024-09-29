@@ -1,0 +1,42 @@
+# .github/workflows/python_cron_job.yml
+
+name: Run Python Cron Job
+
+# This workflow will run every 30 minutes
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 10 * * *'  # Runs every 30 minutes
+
+jobs:
+  run-python-script:
+    runs-on: ubuntu-latest  # Use the latest version of Ubuntu
+
+    steps:
+      # Step 1: Checkout the repository to the runner
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      # Step 2: Set up Python environment
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'  # Specify the Python version you want
+
+      # Step 3: Install dependencies (if there is a requirements.txt file)
+      - name: Install dependencies
+        run: |
+          if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+
+      # Step 4: Run the Python script
+      - name: Run Python script
+        run: timeout 900 python bot-proxy.py
+
+      # (Optional) Step 5: Cache Python dependencies to speed up future runs
+      - name: Cache pip dependencies
+        uses: actions/cache@v2
+        with:
+          path: ~/.cache/pip
+          key: ${{ runner.os }}-pip-${{ hashFiles('requirements.txt') }}
+          restore-keys: |
+            ${{ runner.os }}-pip-

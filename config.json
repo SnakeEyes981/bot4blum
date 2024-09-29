@@ -1,7 +1,7 @@
 {
   "auto-check-in": "true",
-  "auto-do-task": "true",
-  "auto-claim-ref": "true",
+  "auto-do-task": "false",
+  "auto-claim-ref": "false",
   "auto-farm": "true",
   "auto-play-game": "true"
 }
