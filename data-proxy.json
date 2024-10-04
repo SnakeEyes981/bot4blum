@@ -2,19 +2,19 @@
   "accounts": [
     {
       "acc_info": "query_id=AAGp8T0dAwAAAKnxPR1uquFh&user=%7B%22id%22%3A6933049769%2C%22first_name%22%3A%22Hassan%22%2C%22last_name%22%3A%22Yaseen%22%2C%22username%22%3A%22chip1jonny%22%2C%22language_code%22%3A%22en%22%2C%22allows_write_to_pm%22%3Atrue%7D&auth_date=1727450295&hash=d083daf4aac2fff752bee4d002d836a7e58238a4fd69f077f6349f991d47d977",
-      "proxy_info": "http://lgfcdgkx:fydfc62s41ws@206.41.172.74:6634"
+      "proxy_info": "http://mfcgsbry:75v2rn1x214n@206.41.172.74:6634"
     },
     {
       "acc_info": "query_id=AAHSc2VJAwAAANJzZUkolero&user=%7B%22id%22%3A7673836498%2C%22first_name%22%3A%22Usman%22%2C%22last_name%22%3A%22Kharal%22%2C%22username%22%3A%22usmankharal112%22%2C%22language_code%22%3A%22en%22%2C%22allows_write_to_pm%22%3Atrue%7D&auth_date=1727592952&hash=d55a8028b22f626fa8ed311bacce050310d47f431075cc95955ec4a3a56cbdf1",
-      "proxy_info": "http://lgfcdgkx:fydfc62s41ws@198.23.239.134:6540"
+      "proxy_info": "http://mfcgsbry:75v2rn1x214n@198.23.239.134:6540"
     },
     {
       "acc_info": "query_id=AAHPOjxdAwAAAM86PF0vUHZc&user=%7B%22id%22%3A8006679247%2C%22first_name%22%3A%22Asad%22%2C%22last_name%22%3A%22Javed%22%2C%22username%22%3A%22asadkharal112%22%2C%22language_code%22%3A%22en%22%2C%22allows_write_to_pm%22%3Atrue%7D&auth_date=1727593391&hash=fc2f267349212dfbfd5f7649d4b8bde189c83c89f26a6a1c9bccec7af2df8262",
-      "proxy_info": "http://lgfcdgkx:fydfc62s41ws@173.211.0.148:6641"
+      "proxy_info": "http://mfcgsbry:75v2rn1x214n@173.211.0.148:6641"
     },
     {
       "acc_info": "query_id=AAEQmrEZAwAAABCasRn7Z9Uk&user=%7B%22id%22%3A6873520656%2C%22first_name%22%3A%22Ali%22%2C%22last_name%22%3A%22Kamran%22%2C%22username%22%3A%22alikharal112%22%2C%22language_code%22%3A%22en%22%2C%22allows_write_to_pm%22%3Atrue%7D&auth_date=1727593628&hash=7724508143312a31234cd3440c9c425d0d5f97f20f968cb467b5d6525b2bd770",
-      "proxy_info": "http://lgfcdgkx:fydfc62s41ws@104.239.105.125:6655"
+      "proxy_info": "http://mfcgsbry:75v2rn1x214n@104.239.105.125:6655"
     }
   ]
 }
